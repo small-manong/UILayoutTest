@@ -1,41 +1,35 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:text="Button3" />
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Button1" />
+        android:layout_gravity="left|top"
+        android:text="Button1"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="Button2" />
+        android:layout_gravity="right|top"
+        android:text="Button2"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_gravity="left|bottom"
+        android:text="Button3"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"/>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:text="Button4" />
+        android:layout_gravity="right|bottom"
+        android:text="Button4"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button3"
-        android:layout_toRightOf="@id/button3"
-        android:text="Button5" />
-
-</FrameLayout>
+</android.support.percent.PercentFrameLayout>
